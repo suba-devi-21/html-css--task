@@ -1,0 +1,1133 @@
+:root {
+    --Black--: #222222;
+    --orange--: #fd8d3a;
+    --palewhite--: #ffffff;
+    --grey--: #666666;
+    --lightorange--: #fa7436;
+    --lightgrey--: #999999;
+    --lightblack--: #444444;
+    --Darkblack--: #000000;
+  }
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+  }
+  
+  /* Resetting some defaults for better control */
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    font-family: "Volkhov-bold";
+  }
+  
+  .wrapper {
+    width: 1134px;
+    margin: 0 auto;
+  }
+  .btn {
+    padding: 16px 32px;
+    border-radius: 6px;
+    color: #ffffff;
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    background-color: #fa7436;
+    border:2px solid #fa7436;
+    transition: all 0.3s linear 0s;
+  }
+  
+  .btn:hover {
+    box-shadow: 0px 2px 6px #fa7436;
+    border:2px solid #000;
+    }
+  
+  header {
+    background-color: #FEFCFB;
+    width: 100%;
+    padding-bottom:60px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    width: 1134px;
+    top: 0;
+    padding: 29px 0;
+    z-index: 100;
+    transition: all 500ms ease;
+    align-items: center; /* Vertical alignment */
+    background: var(--palewhite--);
+    font-family: "volkhov,bold";
+  }
+  nav.scrolled {
+    background: var(--palewhite--);
+    box-shadow: 0 16px 14px -8px rgba black(0, 0, 0, 0.3);
+    border-radius: 0 0 8px 8px;
+    top: 0;
+    padding: 12px;
+  }
+  
+  nav .logo img {
+    height: auto;
+  }
+  
+  /* Navigation bar styling */
+  nav ul {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    color: #000000;
+  }
+  nav ul li {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li a {
+    color: #000000;
+    font-size: 16px;
+    text-decoration: none !important;
+  }
+  
+  nav ul li a:hover {
+    color: #fd8d3a;
+    text-decoration: none !important;
+  }
+  
+  .login-btn-grp .login-btn {
+    font-weight: 400;
+    font-size: 16px;
+    color: #fd8d3a;
+    background-color: transparent;
+    margin-right: 50px; /* Padding for the button */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+  }
+  
+  .login-btn-grp .btn {
+    font-weight: 400;
+    font-size: 16px;
+    padding: 13px 50px;
+  }
+  
+  .banner-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .banner-section .left {
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  /* Styling for the h1 heading */
+  .banner-section .left h1 {
+    font-family: "Volkhov-bold";
+    font-weight: 700;
+    font-size: 48px;
+    color: #333;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  .banner-section .left h1 .highlight {
+    color: #fa7436;
+  }
+  
+  .banner-section .left p {
+    font-size: 20px;
+    line-height: 36px;
+    color: #666666;
+    margin-bottom: 60px;
+  }
+  
+  .banner-section .left .btn {
+     
+    background-color: #FFF;
+    color: #fd8d3a;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+    border: 2px solid var(--orange--);
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 6px;
+    padding: 14px 28px;
+    width: max-content;
+    text-transform: capitalize;
+  
+  }
+  
+  .banner-section .right {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 50%;
+  }
+  
+  .banner-section .hero-image-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%; /* Ensure it occupies full width */
+    max-width: 500px; /* Adjust size as needed */
+  }
+  
+  .banner-section .hero-image-wrapper img{
+    height: auto;
+    max-width: 100%;
+  }
+  
+  .search-container {
+    margin: 60px auto;
+    width: 75%;
+    background: #FFF;
+    border-radius: 8px;
+    padding: 32px 24px;
+    box-shadow: 0px 0px 2px #CCC;
+    position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .search-container .btn{
+    font-size:18px;
+    font-weight: 400;
+  }
+  
+  .search-container .box label {
+    margin-top:10px;
+    margin-left: 6px;
+    display: block;
+    color:#666;
+    font-size: 12px;
+  }
+  
+  .search-container .box select {
+    background-color: transparent;
+    color: #222;
+    width: 130px;
+    border: none;
+    font-size: 16px;
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+  }
+  
+  
+  
+  .hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    height: calc(100vh-100px);
+  }
+  
+  /* Styling for the left section */
+  .hero-section .left {
+    max-width: 50%;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  /* Styling for the h1 heading */
+  .hero-section .left h1 {
+    font-family: "Volkhov-bold";
+    font-weight: 700;
+    font-size: 48px;
+    color: #333;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  .hero-section .left h1 .highlight {
+    color: #fa7436;
+  }
+  
+  /* Styling for the paragraph */
+  .hero-section .left p {
+    font-size: 18px;
+    color: #666666;
+    margin-bottom: 30px;
+  }
+  
+  .hero-section .left .btn {
+    font-size: 16px;
+    padding: 12px 30px;
+    background-color: #f4f4f4;
+    color: #fd8d3a;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+    border: 2px solid var(--orange--);
+  }
+  
+  
+  
+  
+  /* Ensure the navigation bar is separate from the hero section */
+  
+  
+  /* General styling for the hero section */
+  .hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: #f4f4f4;
+    min-height: calc(
+      100vh - 80px
+    ); /* Adjust to fill the viewport minus header height */
+    margin-top: 80px; /* Space between header and hero section */
+  }
+  
+  /* Styling for the right section */
+  .hero-section .right {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 50%;
+  }
+  
+  /* Styling for the airforce image */
+  .hero-section .right img.airforce-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+  }
+  
+  /* Styling for the hero image */
+  .hero-section .right img.hero-image {
+    width: 100%;
+    max-width: 400px;
+    z-index: 0;
+  }
+  
+  /* Styling for the hero section */
+  .hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 20px;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  /* Left section (text) */
+  .hero-section .left {
+    max-width: 50%;
+  }
+  
+  .hero-section .left h1 {
+    font-family: "Volkhov", serif;
+    font-weight: bold;
+    font-size: 3em;
+    line-height: 1.2;
+  }
+  
+  .highlight {
+    color:#fa7436;
+  }
+  .hero-section .right {
+    position: relative;
+    max-width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  /* Wrapper for hero image and airforce icon */
+  .hero-image-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%; /* Ensure it occupies full width */
+    max-width: 400px; /* Adjust size as needed */
+    height: 400px; /* Adjust height as needed */
+  }
+  
+  /* Orange background covering the bottom half */
+  .hero-image-wrapper::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+  
+    z-index: 1; /* Ensure it is behind the hero image */
+  }
+  
+  /* Hero image styling */
+  .hero-image-wrapper .hero-image {
+    width: 100%;
+    height: 100%; /* Cover the entire wrapper */
+    object-fit: cover; /* Maintain aspect ratio */
+    position: relative; /* Ensure it is above the orange background */
+    z-index: 2; /* Ensure it is above the orange background */
+  }
+  
+  /* Airforce icon styling */
+  .hero-image-wrapper .airforce-icon {
+    position: absolute;
+    top: 10px; /* Adjust vertical position */
+    right: 10px; /* Adjust horizontal position */
+    width: 80px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 3; /* Ensure it appears above all other elements */
+  }
+
+  .Money-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px; /* Space between sections */
+  }
+  
+  .Money-section .content {
+    max-width: 600px;
+    margin-right: 20px; /* Space between text and image */
+  }
+  
+  .Money-section h2 {
+    font-family: "Volkhov", serif;
+    font-weight: bold;
+    font-size: 3em;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+  
+  .Money-section .highlight {
+    color: #fa7436;
+  }
+  
+  .Money-section p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+    margin-bottom: 30px;
+  }
+  
+  .Money-section .image-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .Money-section .image-container img {
+    max-width: 300px;
+    height: auto;
+  }
+  
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .container ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .container ul li {
+    text-align: center;
+    flex: 1;
+  }
+  
+  .container ul li a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .container ul li img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .container ul li h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #000000;
+  }
+  
+  .container ul li p {
+    font-size: 0.9em;
+    line-height: 1.4;
+    margin-top: 10px;
+    color: #000;
+  }
+  
+  /* General styling for the Detailing section */
+.Detailing-section {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Styling for the Discount heading */
+.Discount h1 {
+    font-family: "Volkhov", serif;
+    font-weight: bold;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Highlight color */
+.Discount .highlight {
+    color: #fa7436;
+}
+
+/* Paragraph styling */
+.Discount p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* UL styling to display images horizontally */
+.Discount ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* LI styling to ensure images are responsive */
+.Discount ul li {
+    flex: 1;
+    max-width: 200px; /* Adjust the max width of the image cards */
+}
+
+/* Image styling */
+.Discount ul li img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.Discount ul li img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Styling for the material icons */
+.material.icon {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.material.icon img {
+    width: 40px; /* Adjust size as needed */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.material.icon img:hover {
+    transform: scale(1.2); /* Slight zoom on hover */
+}
+/* General Styling for the Testimonial Section */
+.Testimonial-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: transparent; /* No grey background */
+    position: relative; /* Required for positioning the coconut image and arrow buttons */
+  }
+  
+  .Testimonial-section h1 {
+    font-family: "Volkhov", serif;
+    font-weight: bold;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .Testimonial-section p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  
+  /* Coconut Image Styling */
+  .Testimonial-section .coconut-images {
+    position: absolute; /* Absolute positioning relative to the section */
+    top: 20%; /* Move downwards */
+    right: 15%; /* Move rightwards */
+    transform: translateY(-50%); /* Center vertically */
+  }
+  
+  .Testimonial-section .coconut-images img {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+  }
+  
+  /* Testimonial List Styling */
+  .Testimonial-section .testimonial-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Testimonial List Item Styling */
+  .Testimonial-section .testimonial-list li {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .Testimonial-section .testimonial-list li img {
+    width: 100%;
+    max-width: 200px; /* Adjust card size */
+    height: auto;
+  }
+  
+  /* Arrow Button Styling */
+  .Testimonial-section .material.icon {
+    position: absolute;
+    top: calc(100%-80px); /* Move above card 3, adjust as needed */
+    right: 20px; /* Move slightly to the left to align above card 3 */
+    display: flex;
+    gap: 10px; /* Space between the two arrow buttons */
+  }
+  
+  .Testimonial-section .material.icon img {
+    width: 40px; /* Adjust size as needed */
+    height: auto;
+  }
+  /* Overall section styling */
+.Testing-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 20px; /* Adjust padding as needed */
+  }
+  
+  /* Left section styling */
+  .Testing-section .left {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .Testing-section .left h1 {
+    font-family: "Volkhov", serif;
+    font-weight: bold;
+    font-size: 2.5em;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  
+  .Testing-section .left .highlight {
+    color: #fa7436; /* Highlight color */
+  }
+  
+  .Testing-section .left p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    line-height: 1.4;
+  }
+  
+  .Testing-section .left .material.icon {
+    display: flex;
+    gap: 10px; /* Space between arrows */
+  }
+  
+  /* Arrow button styling */
+  .Testing-section .left .material.icon img {
+    width: 40px; /* Adjust size as needed */
+    height: auto;
+  }
+  
+  /* Right section styling */
+  .Testing-section .right {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between images */
+    max-width: 50%;
+  }
+  
+  .Testing-section .right a img {
+    width: 100%; /* Adjust size as needed */
+    max-width: 150px; /* Ensure images don’t get too large */
+    height: auto;
+  }
+  
+  /* Final section styling */
+.final-section {
+    padding: 60px 20px; /* Adjust padding as needed */
+    text-align: center; /* Center text and elements */
+  }
+  
+  .final-section h1 {
+    font-family: "Volkhov", serif;
+    font-weight: bold;
+    font-size: 2.5em;
+    line-height: 1.2;
+    margin-bottom: 40px; /* Space below the heading */
+  }
+  
+  .final-section .highlight {
+    color: #fa7436; /* Highlight color */
+  }
+  
+  /* Blog entries container styling */
+  .blog-entries {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between blog entries */
+    justify-content: center; /* Center blog entries horizontally */
+  }
+  
+  /* Blog entry styling */
+  .blog-entry {
+    flex: 1 1 calc(25% - 20px); /* Adjust size and spacing of entries */
+    box-sizing: border-box;
+    border: 1px solid #ddd; /* Border around each blog entry */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff; /* Background color */
+    padding: 20px; /* Space inside the blog entry */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+  }
+  
+  .blog-entry:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  }
+  
+  .blog-image {
+    width: 100%; /* Make image occupy full width of the entry */
+    height: auto;
+    border-bottom: 1px solid #ddd; /* Border below image */
+    margin-bottom: 15px; /* Space below image */
+  }
+  
+  .blog-entry p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #333; /* Dark text color */
+  }
+  
+  .blog-entry h6 {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9em;
+    color: #777; /* Lighter text color for date */
+  }
+  
+  /* Three dot button styling */
+  .three-dot-button {
+    display: block;
+    margin: 40px auto 0; /* Center and space above */
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+  }
+  /* General Footer Styles */
+footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Subscribe Section Styles */
+.subscribe-section {
+  text-align: center;
+  padding: 20px;
+  background-color: #fa7436; /* Orange background for the entire subscribe section */
+  color: #fff; /* White text color */
+  border-radius: 10px; /* Rounded corners for a smooth look */
+  margin-bottom: 20px;
+}
+
+.subscribe-section h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.subscribe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.email-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.email-container input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 250px; /* Fixed width for the input field */
+}
+
+.subscribe-container img {
+  vertical-align: middle;
+}
+
+.subscribe-container a img {
+  display: block;
+}
+
+.email-container a img {
+  width: 24px; /* Adjust width of email icon */
+  height: 24px; /* Adjust height of email icon */
+}
+/* Trabook Section Styles */
+.trabook-section {
+  text-align: left;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.trabook-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.trabook-section h2 {
+  font-family: 'Volkhov', serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0;
+  color: #333;
+}
+
+.trabook-section img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.trabook-section p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #555;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.social-media {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.social-media a img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.social-media a img:hover {
+  transform: scale(1.1);
+}
+/* General Footer Styles */
+footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Footer Container Styles */
+.footer-container {
+  display: flex;
+  justify-content: space-between; /* Space between left and right sections */
+  align-items: flex-start; /* Align items to the top */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Left Section Styles */
+.left-section {
+  flex: 1; /* Take up remaining space */
+  padding-right: 20px; /* Add padding to the right */
+}
+
+/* Trabook Section Styles */
+.trabook-section {
+  text-align: left;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners for a smooth look */
+}
+
+.trabook-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.trabook-section h2 {
+  font-family: 'Volkhov', serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0;
+  color: #333;
+}
+
+.trabook-section img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.trabook-section p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #555;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.social-media {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.social-media a img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.social-media a img:hover {
+  transform: scale(1.1);
+}
+
+/* Right Section Styles */
+.right-section {
+  flex: 1; /* Take up remaining space */
+  padding-left: 20px; /* Add padding to the left */
+}
+
+/* Footer Links Section Styles */
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Space between each link section */
+}
+
+.footer-links div {
+  margin: 0;
+}
+
+.footer-links h3 {
+  font-family: 'Volkhov', serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #555;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #FFA500; /* Change text color to orange on hover */
+}
+/* Footer Bottom Section Styles */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between; /* Space between left and right content */
+  align-items: center; /* Center items vertically */
+  width: 100%;
+  max-width: 1200px; /* Ensure it does not exceed the maximum width */
+  margin: 20px auto; /* Center horizontally and add vertical margin */
+  font-size: 14px;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-bottom p {
+  margin: 0; /* Remove default margin */
+}
+
+/* Styling for Terms and conditions link */
+.footer-bottom p:last-child {
+  text-align: right;
+  color: #000; /* Orange color for link text */
+  text-decoration: none; /* Underline for the link */
+  cursor: pointer; /* Pointer cursor to indicate clickable item */
+}
+
+.footer-bottom p:last-child:hover {
+  color: #e68a00; /* Slightly darker orange on hover */
+}
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .hero-section .left, .hero-section .right {
+    max-width: 100%;
+  }
+  
+  .hero-image-wrapper {
+    width: 80%;
+    height: auto;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 12px;
+  }
+  
+  footer {
+    font-size: 14px;
+  }
+  
+  .subscribe-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .email-container input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  nav {
+    padding: 10px 20px;
+  }
+  
+  .hero-section {
+    flex-direction: row;
+    padding: 40px 20px;
+  }
+  
+  .hero-section .left, .hero-section .right {
+    max-width: 50%;
+  }
+  
+  .hero-image-wrapper {
+    width: 90%;
+    height: auto;
+  }
+  
+  .btn {
+    padding: 14px 28px;
+  }
+  
+  footer {
+    font-size: 16px;
+  }
+  
+  .subscribe-container {
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .email-container input {
+    width: 200px;
+  }
+}
+@media (min-width: 1025px) {
+  nav {
+    padding: 15px 30px;
+  }
+  
+  .hero-section {
+    padding: 60px 40px;
+  }
+  
+  .hero-image-wrapper {
+    width: 100%;
+    height: 400px;
+  }
+  
+  .btn {
+    padding: 16px 32px;
+  }
+  
+  footer {
+    font-size: 18px;
+  }
+  
+  .subscribe-container {
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .email-container input {
+    width: 250px;
+  }
+}
+
+
+  
+  
+  
